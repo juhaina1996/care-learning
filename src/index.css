@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/fonts/sofia-pro/SofiaPro-Regular.woff2") format("woff2"),
+       url("/fonts/sofia-pro/SofiaPro-Regular.woff") format("woff"),
+       url("/fonts/sofia-pro/SofiaPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/fonts/sofia-pro/SofiaPro-Bold.woff2") format("woff2"),
+       url("/fonts/sofia-pro/SofiaPro-Bold.woff") format("woff"),
+       url("/fonts/sofia-pro/SofiaPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html, body, #root {
+  height: 100%;
+   font-family: "Sofia", sans-serif;
+}
+
+body {
+  background: #F8FAFEC7;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* subtle container padding */
+.app-root {
+  min-height: 100vh;
+  padding: 26px 40px;
+}
+
+/* glass card helper */
+.glass {
+  background: rgba(255,255,255,0.66);
+  backdrop-filter: blur(10px) saturate(120%);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(16,24,40,0.08);
+  border: 1px solid rgba(255,255,255,0.6);
+}
+
+/* small pill */
+.pill {
+  background: rgba(255,255,255,0.7);
+  padding: 6px 12px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 10px rgba(16,24,40,0.06);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+/* left sidebar buttons */
+.sidebar-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  background: transparent;
+  border: 1px solid transparent;
+}
+.sidebar-btn.active {
+  background: linear-gradient(180deg, #2f55ff, #3b68ff);
+  color: white;
+  box-shadow: 0 8px 24px rgba(47,85,255,0.12);
+}
